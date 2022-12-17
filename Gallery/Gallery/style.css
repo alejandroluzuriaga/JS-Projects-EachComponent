@@ -19,6 +19,7 @@
 
 *{
   box-sizing: border-box;
+  position: relative;
 }
 
 body{
@@ -50,4 +51,23 @@ body{
 
 .alex-gallery h3{
   font-size: 2rem;
+}
+
+.vote-modal{
+  position: fixed;
+  inset: 0;
+  top: 15vh;
+  max-height: 60vh;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .vote-modal{
+    max-width: 80%;
+  }
+  
 }
