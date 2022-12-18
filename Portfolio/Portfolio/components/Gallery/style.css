@@ -1,0 +1,78 @@
+.alex-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.image-container img{
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.alex-gallery > .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.alex-gallery > .card *{
+  pointer-events: none;
+}
+
+.card .star {
+  font-size: 1.5rem;
+}
+
+.alex-gallery h3{
+  font-size: 2rem;
+}
+
+.vote-modal{
+  position: fixed;
+  inset: 0;
+  top: 15vh;
+  max-height: 70vh;
+  width: 90%;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  display: none;
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .vote-modal{
+    max-width: 80%;
+    max-height: 75%;
+  }
+  
+}
+
+.vote-modal button{
+  background-color: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  0 1rem;
+  border-bottom: 1px solid var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.modal-body{
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.modal-body img{
+  max-width: 300px;
+  max-height: 225px;
+}

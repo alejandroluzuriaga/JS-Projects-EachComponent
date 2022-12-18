@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <!-- Navbar left simbols -->
+        <a href="#">Home🏠</a>
+      </nav>
+      <button id="toggle-menu" class="toggle-menu">🍔</button>
+      <!-- Menu button  -->
+
+      <div id="menu-content" class="menu-content">
+        <!-- Menu button after pressed -->
+        <div class="favorites">
+          <h3>Favorite documents ⭐</h3>
+        </div>
+
+        <div class="search">
+          <!-- Text input -->
+          <input
+            type="text"
+            name="search"
+            id="menu-search"
+            placeholder="Search a programming language"
+          />
+        </div>
+      </div>
+    </header>
+    
+    <div id="app">
+      <div id="carousel-container">
+        <h2>Carousel🎠</h2>
+      </div>
+      
+      <div id="gallery-container">
+        <h2>Gallery📷</h2>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
